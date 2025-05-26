@@ -1,7 +1,6 @@
 import "./App.css";
 import ChatbotUI from "./components/Chatbot/ChatbotUI";
 
-
 function App() {
   return (
     <div className="app">

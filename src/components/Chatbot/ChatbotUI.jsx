@@ -36,7 +36,6 @@ const ChatbotUI = () => {
         setCurrentTypingMessage(
           fullMessageToType.substring(0, currentTypingMessage.length + 1)
         );
-
       }, 30);
       return () => clearTimeout(timeoutId);
     } else if (
@@ -128,7 +127,13 @@ const ChatbotUI = () => {
     return (
       <div className="chatbot-toggle" onClick={toggleChatbot}>
         <div className="chatbot-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
             <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2Z" />
           </svg>
         </div>
@@ -141,11 +146,21 @@ const ChatbotUI = () => {
     <div className="chatbot-container">
       <div className="chatbot-header">
         <div className="chatbot-title">
-          <img src="/images/nestle-logo.png" alt="Nestle Logo" className="nestle-logo" />
+          <img
+            src="/images/nestle-logo.png"
+            alt="Nestle Logo"
+            className="nestle-logo"
+          />
           <h2>Coffee Assistant</h2>
         </div>
         <button className="close-button" onClick={toggleChatbot}>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
             <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
           </svg>
         </button>
@@ -153,7 +168,12 @@ const ChatbotUI = () => {
 
       <div className="messages-container">
         {messages.map((message) => (
-          <div key={message.id} className={`message ${message.sender === "bot" ? "bot-message" : "user-message"}`}>
+          <div
+            key={message.id}
+            className={`message ${
+              message.sender === "bot" ? "bot-message" : "user-message"
+            }`}
+          >
             {message.text}
           </div>
         ))}
@@ -185,8 +205,18 @@ const ChatbotUI = () => {
           disabled={isLoading || isTyping}
           className="chatbot-input"
         />
-        <button type="submit" disabled={isLoading || isTyping || input.trim() === ""} className="send-button">
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+        <button
+          type="submit"
+          disabled={isLoading || isTyping || input.trim() === ""}
+          className="send-button"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
             <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
           </svg>
         </button>

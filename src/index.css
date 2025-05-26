@@ -1,13 +1,24 @@
+/* ============================== */
+/* 🌗 Theme Variables Definition */
+/* ============================== */
 :root {
-  --font-family: 'Helvetica Neue', Arial, sans-serif;
-  --nestle-blue: #0066a1;
-  --nestle-dark-blue: #005085;
-  --nestle-light-blue: #e6f4fb;
-  --nestle-red: #d31c2d;
-  --nestle-gray: #58595b;
-  --nestle-light-gray: #f2f2f2;
+  --bg-color: #0a0908;           /* Dark mode base */
+  --text-color: #f8f4e9;
+  --accent-color: #a67c52;
+}
+body {
+  background-image: url("/images/image.png"); /* 👈 put your image in /public/images */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #3a3a3a;
 }
 
+/* ============================== */
+/* 🔧 Global Reset & Utilities   */
+/* ============================== */
 * {
   margin: 0;
   padding: 0;
@@ -19,14 +30,17 @@ html {
 }
 
 body {
-  font-family: var(--font-family);
+  font-family: 'Helvetica Neue', Arial, sans-serif;
   line-height: 1.6;
-  color: var(--nestle-gray);
-  background-color: #ffffff;
+  background-color: var(--bg-color);
+  color: var(--text-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* ============================== */
+/* 🌐 Global Element Styling     */
+/* ============================== */
 img {
   max-width: 100%;
   height: auto;
@@ -34,7 +48,7 @@ img {
 }
 
 button {
-  font-family: var(--font-family);
+  font-family: inherit;
   cursor: pointer;
 }
 
@@ -45,9 +59,11 @@ select {
   font: inherit;
 }
 
-/* Remove default focus outline and add custom one */
+/* ============================== */
+/* 🎯 Focus Styling              */
+/* ============================== */
 :focus {
-  outline: 2px solid var(--nestle-blue);
+  outline: 2px solid var(--accent-color);
   outline-offset: 2px;
 }
 
@@ -55,7 +71,9 @@ select {
   outline: none;
 }
 
-/* Utility classes */
+/* ============================== */
+/* 🧰 Utility Classes            */
+/* ============================== */
 .container {
   width: 100%;
   max-width: 1200px;

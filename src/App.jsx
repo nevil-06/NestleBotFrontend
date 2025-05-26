@@ -1,20 +1,19 @@
 import "./App.css";
 import ChatbotUI from "./components/Chatbot/ChatbotUI";
 
+
 function App() {
   return (
     <div className="app">
       <header className="header">
         <div className="header-content">
           <div className="logo-container">
-            <svg
-              className="coffee-icon"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-            >
-              <path d="M2,21V19H20V21H2M20,8V5H18V8H20M20,3A2,2 0 0,1 22,5V8A2,2 0 0,1 20,10H18V13A4,4 0 0,1 14,17H8A4,4 0 0,1 4,13V3H20M16,5H6V13A2,2 0 0,0 8,15H14A2,2 0 0,0 16,13V5Z" />
-            </svg>
-            <h1 className="logo-text">Café Nestle</h1>
+            <img
+              src="/images/image.png"
+              alt="Nestlé Logo"
+              className="nestle-logo"
+            />
+            <h1 className="logo-text">Nestlé Assitant</h1>
           </div>
           <nav className="main-nav">
             <ul className="nav-list">
@@ -32,59 +31,15 @@ function App() {
         <section className="hero-section">
           <div className="hero-content">
             <div className="hero-text">
-              <h1>Awaken Your Senses With Every Sip</h1>
+              <h1>Your One-Stop Nestlé products ChatBot</h1>
               <p>
-                Discover hand-roasted blends from sustainable farms across the
-                globe.
+                Discover Brands, Products, Recipes and additional information
+                about Nestle´.
               </p>
-              <button className="primary-button">Shop Our Roasts</button>
-              <div className="ratings">
-                <div className="avatar-group">
-                  <div className="avatar">
-                    <img
-                      src="https://randomuser.me/api/portraits/women/44.jpg"
-                      alt="Avatar"
-                    />
-                  </div>
-                  <div className="avatar">
-                    <img
-                      src="https://randomuser.me/api/portraits/men/32.jpg"
-                      alt="Avatar"
-                    />
-                  </div>
-                  <div className="avatar">
-                    <img
-                      src="https://randomuser.me/api/portraits/women/68.jpg"
-                      alt="Avatar"
-                    />
-                  </div>
-                  <div className="avatar">
-                    <img
-                      src="https://randomuser.me/api/portraits/men/75.jpg"
-                      alt="Avatar"
-                    />
-                  </div>
-                  <div className="avatar">
-                    <img
-                      src="https://randomuser.me/api/portraits/women/53.jpg"
-                      alt="Avatar"
-                    />
-                  </div>
-                </div>
-                <div className="stars">
-                  <span className="star">★</span>
-                  <span className="star">★</span>
-                  <span className="star">★</span>
-                  <span className="star">★</span>
-                  <span className="star">★</span>
-                  <span className="rating-number">(1,000+ reviews)</span>
-                </div>
-              </div>
             </div>
           </div>
         </section>
 
-        
         <section className="about-section">
           <div className="container about-content">
             <div className="about-text">
@@ -103,25 +58,13 @@ function App() {
                 and knowledge retrieval scenarios.
               </p>
             </div>
-            
           </div>
-          {/* <section className="experience-section">
-          <div className="container">
-            <div className="experience-content">
-              <h3>Want to experience the quality and care behind every cup?</h3>
-              <button className="accent-button">Shop Now</button>
-            </div>
+          <div className="copyright">
+            © {new Date().getFullYear()} Nestle Assistant Bot
           </div>
-        </section> */}
-        {/* <footer className="footer"> */}
-        <div className="copyright">
-          © {new Date().getFullYear()} Nestle Assistant Bot
-        </div>
-      {/* </footer> */}
+          {/* </footer> */}
         </section>
       </main>
-
-      
 
       {/* Chatbot component */}
       <ChatbotUI />

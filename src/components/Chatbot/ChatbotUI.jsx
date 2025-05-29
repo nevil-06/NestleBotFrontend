@@ -1,7 +1,7 @@
 // ✅ Updated chatbot.jsx
 import React, { useState, useEffect, useRef } from "react";
 import "./ChatbotUI.css";
-const baseUrl = import.meta.env.VITE_API_BASE_URL;
+// const baseUrl = import.meta.env.VITE_API_BASE_URL;
 const ChatbotUI = () => {
   const [messages, setMessages] = useState([
     {
@@ -62,7 +62,7 @@ const ChatbotUI = () => {
     setIsLoading(true);
 
     try {
-      const response = await fetch(`${baseUrl}/answer`, {
+      const response = await fetch("http://localhost:8000/answer", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ query: input }),

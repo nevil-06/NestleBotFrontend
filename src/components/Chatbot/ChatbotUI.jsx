@@ -151,7 +151,7 @@ const ChatbotUI = () => {
             alt="Nestle Logo"
             className="nestle-logo"
           />
-          <h2>Coffee Assistant</h2>
+          <h2>Nestlé Assistant</h2>
         </div>
         <button className="close-button" onClick={toggleChatbot}>
           <svg

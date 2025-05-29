@@ -12,7 +12,7 @@ function App() {
               alt="Nestlé Logo"
               className="nestle-logo"
             />
-            <h1 className="logo-text">Nestlé Assitant</h1>
+            <h1 className="logo-text">Nestlé Assistant</h1>
           </div>
           <nav className="main-nav">
             <ul className="nav-list">
